@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/lls"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_80"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_start"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/clicktostart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/get_start_share_more"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/sl1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_80"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/ad_rate_first" />
+
+                <ImageView
+                    android:id="@+id/privacy"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/privacy" />
+
+
+                <ImageView
+                    android:id="@+id/iv_moreapps"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_80"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/ad_more" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <rapidapp.touchbar.freehdvideodownlaoder.videodonwload.Splashexit10.View.ExpandableGridView
+            android:id="@+id/mainmore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:horizontalSpacing="@dimen/value_5"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/value_5" />
+    </LinearLayout>
+
+</LinearLayout>

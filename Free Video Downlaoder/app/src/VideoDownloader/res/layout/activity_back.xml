@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/text_10"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/value_10"
+                android:paddingRight="@dimen/value_10">
+
+                <rapidapp.touchbar.freehdvideodownlaoder.videodonwload.Splashexit10.View.ExpandableGridView
+                    android:id="@+id/gvAppList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:horizontalSpacing="@dimen/value_5"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/value_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/value_10"
+                android:paddingTop="@dimen/value_5"
+                android:paddingRight="@dimen/value_10">
+
+                <rapidapp.touchbar.freehdvideodownlaoder.videodonwload.Splashexit10.View.ExpandableGridView
+                    android:id="@+id/gvAppList1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:numColumns="1"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

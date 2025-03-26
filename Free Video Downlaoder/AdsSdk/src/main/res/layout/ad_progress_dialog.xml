@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Ad Loading Please Wait"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="17dp">
+
+        <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+            android:id="@+id/circular_progress"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            app:direction="clockwise"
+            app:dotColor="?colorPrimary"
+            app:drawDot="false"
+            app:enableProgressAnimation="true"
+            app:fillBackground="false"
+            app:progressBackgroundColor="#20000000"
+            app:progressBackgroundStrokeWidth="8dp"
+            app:progressColor="@color/colorPrimary"
+            app:progressStrokeWidth="8dp"
+            app:startAngle="270"
+            app:textSize="0dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="AD"
+            android:textColor="#79000000" />
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:gravity="center"
+        android:text="This warning dialog is for you to not accidentally click on advertisment."
+        android:textColor="#000" />
+
+</LinearLayout>

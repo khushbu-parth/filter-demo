@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/text_10"
+    android:background="@drawable/dailog_bg"
+    android:elevation="@dimen/text_10"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/text_5">
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/montserratlight"
+        android:text="Do you want to exit ?"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/native_container"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_yes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/text_10"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/yes1"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_no"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/text_10"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/no1"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

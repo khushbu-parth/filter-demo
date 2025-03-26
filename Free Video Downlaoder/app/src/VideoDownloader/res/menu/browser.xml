@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/brback"
+        android:icon="@drawable/ic_back"
+        android:title="@string/br_back" />
+    <item
+        android:id="@+id/brforward"
+        android:icon="@drawable/ic_forward"
+        android:title="@string/br_forward" />
+    <item
+        android:id="@+id/brbookmark"
+        android:icon="@drawable/ic_bookmark"
+        android:title="@string/br_"
+        android:visible="false" />
+    <item
+        android:id="@+id/brcopy"
+        android:icon="@drawable/ic_copy"
+        android:title="@string/br_copy_link" />
+    <item
+        android:id="@+id/brshare"
+        android:icon="@drawable/ic_share"
+        android:title="@string/br_sharelink" />
+</menu>
