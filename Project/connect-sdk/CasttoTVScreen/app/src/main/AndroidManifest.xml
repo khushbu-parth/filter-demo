@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cast.tv.screen.mirroring.screencasting">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <permission
+        android:name="android.permission.CONFIGURE_WIFI_DISPLAY"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="android.permission.CONTROL_WIFI_DISPLAY"
+        android:protectionLevel="normal" />
+
+    <queries>
+        <intent>
+            <action android:name="androidx.browser.customtabs.CustomTabsService" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <data android:scheme="market" />
+        </intent>
+
+        <package android:name="com.facebook.katana" />
+
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name=".CastApp"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CastScreen"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,android:networkSecurityConfig">
+        <activity
+            android:name=".splashExit.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".splashExit.InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.main.MainCastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".supportedices.HDMIActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supportedices.iuc_supporteddevice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supportedices.AutoModeProcessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supportedices.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supportedices.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supportedices.SelectTVActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashExit.First_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashExit.Second_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashExit.Thanyou_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashExit.Exit_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashExit.iuc_PermissionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashExit.Web_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.supported.SupportedDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.help.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.how2use.How2UseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.cast.PhotoCastActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.cast.AudioVideoCastActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.help.ConnectHelpActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.google.android.exoplayer2.ext.cast.DefaultCastOptionsProvider" />
+
+        <service
+            android:name="com.lib.screening.DLNABrowserService"
+            android:exported="true" />
+        <service
+            android:name=".Service.PlayPhotoService"
+            android:exported="true" />
+
+        <activity
+            android:name="com.lib.screening.RequestMediaProjectionActivity"
+            android:theme="@style/RequestMediaProjectionActivityStyle" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver
+            android:name=".Utils.net.NetStateChangeReceiver"
+            android:exported="true" />
+    </application>
+
+</manifest>

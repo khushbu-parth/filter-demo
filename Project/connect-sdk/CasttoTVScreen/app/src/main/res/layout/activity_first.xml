@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_background_new"
+    android:orientation="vertical"
+    tools:context="com.cast.tv.screen.mirroring.screencasting.splashExit.First_Activity">
+
+
+    <RelativeLayout
+        android:layout_above="@+id/rlBtm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/AdNative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/native_space_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true" />
+
+            <FrameLayout
+                android:id="@+id/fl_native_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBtm"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_top">
+
+
+        <ImageView
+            android:id="@+id/imgText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/start_background_text" />
+
+        <ImageView
+            android:layout_below="@+id/imgText"
+            android:id="@+id/start_image"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:src="@drawable/start" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

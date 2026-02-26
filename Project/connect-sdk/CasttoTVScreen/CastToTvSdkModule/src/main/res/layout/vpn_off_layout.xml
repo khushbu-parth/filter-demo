@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/sdk_no_internet_dialog">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semi_bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="VPN Detected!!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+            <ImageView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/no_vp" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_r"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Please turn off VPN &amp; Restart app to continue!!"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/retry_buttton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sdk_dev_option" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/sdk_btn_cancel"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

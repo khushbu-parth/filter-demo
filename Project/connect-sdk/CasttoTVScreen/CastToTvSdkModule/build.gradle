@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 33
+    namespace 'com.library.info'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "BASE_HOST", "\"https://awebhtpo3u8g5t.ecoweb-network.com\""
+        buildConfigField "String", "BASE_OAUTH_METHOD", "\"anonymous\""
+        buildConfigField "String", "SHARED_PREFS", "\"NORTHGHOST_SHAREDPREFS\""
+        buildConfigField "String", "STORED_HOST_URL_KEY", "\"com.northghost.afvclient.STORED_HOST_KEY\""
+        buildConfigField "String", "STORED_CARRIER_ID_KEY", "\"com.northghost.afvclient.CARRIER_ID_KEY\""
+
+        buildConfigField "String", "ALGORITHM", "\"1B5992C9E4A138BB47E5862FD2209032\""
+        buildConfigField "String", "MODE", "\"93F10E7736FA5EBF3A7B3595E26B182407D96C021F291E5AB99389A7DEC93628\""
+        buildConfigField "String", "IV", "\"C2DEEBD14BA71AC04A3130B9D2473962\""
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        buildConfig true
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.gms:play-services-ads:22.0.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-runtime:2.5.1"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.5.1"
+    implementation 'com.airbnb.android:lottie:5.2.0'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation 'com.github.AnchorFreePartner.hydra-sdk-android:sdk:3.6.2'
+    implementation 'com.github.AnchorFreePartner.hydra-sdk-android:openvpn:3.6.2'
+    implementation 'com.github.AnchorFreePartner.hydra-sdk-android:blst:3.6.2'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
+
+}

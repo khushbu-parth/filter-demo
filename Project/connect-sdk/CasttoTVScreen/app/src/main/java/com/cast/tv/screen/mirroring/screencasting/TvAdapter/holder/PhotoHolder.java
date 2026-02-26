@@ -1,0 +1,22 @@
+package com.cast.tv.screen.mirroring.screencasting.TvAdapter.holder;
+
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.cast.tv.screen.mirroring.screencasting.R;
+
+public class PhotoHolder extends RecyclerView.ViewHolder {
+    public ImageView image;
+    public View itemView;
+    public TextView textName;
+
+    public PhotoHolder(View view) {
+        super(view);
+        this.itemView = view;
+        this.textName = (TextView) view.findViewById(R.id.text_name);
+        this.image = (ImageView) view.findViewById(R.id.image);
+    }
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/splash_color">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="30dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:padding="10dp"
+            android:src="@mipmap/icon_back" />
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="40dp"
+            android:layout_toEndOf="@+id/image_back"
+            android:background="@drawable/radius13_white_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/Search"
+            android:imeOptions="actionDone"
+            android:paddingStart="12dp"
+            android:paddingEnd="40dp"
+            android:singleLine="true"
+            android:textColor="#0B0F2E"
+            android:textColorHint="#5E5E5E"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/image_clear"
+            android:layout_width="29.5dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="47dp"
+            android:padding="10dp"
+            android:src="@mipmap/icon_clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/SearchEmptyTip"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>

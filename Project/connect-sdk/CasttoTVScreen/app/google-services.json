@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "93227225281",
+    "project_id": "cast-to-tv-24658",
+    "storage_bucket": "cast-to-tv-24658.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93227225281:android:6e0f2b701cbe10b4de8440",
+        "android_client_info": {
+          "package_name": "console.casttotv.screenconnect.mirroring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93227225281-e8a13l8dcb3mrgrqpmc0askilufvdblt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC35VtZlXbHeSJov7qUSTxMIGI1fTVjsVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93227225281-e8a13l8dcb3mrgrqpmc0askilufvdblt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

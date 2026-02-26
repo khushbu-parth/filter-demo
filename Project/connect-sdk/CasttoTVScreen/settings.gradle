@@ -1,0 +1,4 @@
+rootProject.name = "CasttoTVScreen"
+include ':app'
+include ':applibs'
+include ':CastToTvSdkModule'

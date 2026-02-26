@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/int_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_100sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <ImageView
+            android:id="@+id/ImgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_3sdp"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/sdk_ic_close" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_r"
+            android:gravity="top"
+            android:layout_centerInParent="true"
+            android:text="Loading Ads..."
+            android:textColor="#444444"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/cust_ad_media"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

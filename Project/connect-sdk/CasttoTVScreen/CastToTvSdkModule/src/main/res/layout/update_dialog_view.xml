@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/sdk_no_internet_dialog">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="@dimen/_7sdp"
+                android:src="@drawable/sdk_image_update" />
+            <ImageView
+                android:id="@+id/update_redirect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_65sdp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:src="@drawable/sdk_update_text" />
+            <ImageView
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:src="@drawable/sdk_update_now_btn" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

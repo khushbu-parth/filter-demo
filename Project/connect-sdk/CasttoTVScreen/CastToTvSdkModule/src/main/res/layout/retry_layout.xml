@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/sdk_no_internet_dialog">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_110sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sdk_no_internet" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_55sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sdk_nointernet_text" />
+
+            <ImageView
+                android:id="@+id/retry_buttton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sdk_no_internet_trybtn" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/sdk_btn_cancel"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

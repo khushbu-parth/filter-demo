@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_ads_background">#EDEDED</color>
+
+    <color name="color_ad_tag_background">#FFB300</color>
+    <color name="color_text_ad_tag">#FFFFFF</color>
+
+    <color name="color_ads_button_background">#00897B</color>
+    <color name="color_text_button">#FFFFFF</color>
+
+    <color name="color_text_title">#000000</color>
+    <color name="color_text_body">#787878</color>
+    <color name="color_rating_tint">#FB8C00</color>
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="s_td_CustomRatingBarStyle" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressBackgroundTint">#6E6E6E</item>
+        <item name="android:progressTint">#6E6E6E</item>
+        <item name="android:secondaryProgressTint">#6E6E6E</item>
+        <item name="android:progressDrawable">@drawable/sdk_td_custom_ratingbar</item>
+        <item name="android:minHeight">30px</item>
+        <item name="android:maxHeight">30px</item>
+    </style>
+
+    <style name="Ad2_CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Ad2_CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="Ad2_CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Ad2_DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/ad2_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/ad2_dialog_out</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+</resources>

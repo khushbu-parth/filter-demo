@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:paddingTop="39dp"
+    android:paddingBottom="42dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/color_969696"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SupportedFootCopyWriting" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/view_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="21dp"
+            android:src="@mipmap/icon_feedback_white" />
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:id="@+id/text_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ContactUs"
+            android:textAllCaps="true"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+</LinearLayout>

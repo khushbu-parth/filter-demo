@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashExit.InfoActivity">
+
+    <FrameLayout
+        android:id="@+id/AdFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/native_space_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+
+        <FrameLayout
+            android:id="@+id/fl_native_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_below="@+id/AdFrame"
+        android:layout_above="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:text="Personal Information:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="We DO NOT collect, store or use any personal information while you visit, download or upgrade our products.  We may use personal information submitted by you only for the following purposes: help us develop, deliver, and improve our products and services and supply higher quality service; manage online surveys and other activities you’ve participated in.  In the following circumstances, we may disclose your personal information according to your wish or regulations by law:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="-  Your prior permission;"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="- To protect our legal rights and interests."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="- By requests from public and governmental authorities;"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="- By the applicable law within or outside your country of residence, legal process, litigation requests;"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:text="Non- Personal Information:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="We may collect and use non-personal information in the following circumstances: To have a better understanding in user’s behavior, to solve problems in products and services, improve our products, services and advertising. We may collect non-personal information such as installed application name and package name, Installed data, frequency of use, country, equipment and channel. If non-personal information is combined with personal information, we treat the combined information as personal information for the purposes of this Privacy Policy. Our Privacy Policy may change from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:text="Security"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="The technology that we use and the policies that we have implemented are intended to safeguard your privacy from unauthorized access and improper use. We will continue to update these measures as new technology becomes available."/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#EA5537"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/black"
+                android:text="I understand that sharing of inappropriate content will not be tolerated."/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#EA5537"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text="I confirm that I am 13 years old or above."
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="25dp"
+            android:gravity="center"
+            android:text="By Clicking get started, you are agree to above terms of use and privacy policy."/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGuideStart"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Get started"
+            android:layout_marginHorizontal="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="#EA5537"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
