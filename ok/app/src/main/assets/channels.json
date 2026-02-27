@@ -1,0 +1,164 @@
+{
+  "event": "ed.installedApp.get",
+  "data": {
+    "data": [
+      {
+        "appId": "111299001912",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/111299001912/250x250.png",
+        "name": "YouTube"
+      },
+      {
+        "appId": "3201604008808",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201604008808/250x250.png",
+        "name": "Galaxy Play"
+      },
+      {
+        "appId": "11101200001",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/11101200001/250x250.png",
+        "name": "Netflix"
+      },
+      {
+        "appId": "3201810017174",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201810017174/250x250.png",
+        "name": "MyTV - VNPT"
+      },
+      {
+        "appId": "20162100007",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/20162100007/250x250.png",
+        "name": "emanual"
+      },
+      {
+        "appId": "111399001620",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/111399001620/250x250.png",
+        "name": "NET. TV"
+      },
+      {
+        "appId": "111299002229",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/111299002229/250x250.png",
+        "name": "The KARAOKE Channel TV App"
+      },
+      {
+        "appId": "3201509005146",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201509005146/250x250.png",
+        "name": "Mercedes-Benz TV"
+      },
+      {
+        "appId": "11091000000",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/11091000000/250x250.png",
+        "name": "Facebook Watch"
+      },
+      {
+        "appId": "3201606009684",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201606009684/250x250.png",
+        "name": "Spotify - Nhạc và Podcast"
+      },
+      {
+        "appId": "org.tizen.browser",
+        "app_type": 4,
+        "icon": "/opt/down/webappservice/apps_icon/LocalIcon/org.tizen.browser.png",
+        "name": "Web Browser"
+      },
+      {
+        "appId": "3201511006341",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201511006341/250x250.png",
+        "name": "HTVC"
+      },
+      {
+        "appId": "3201512006785",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201512006785/250x250.png",
+        "name": "Prime Video"
+      },
+      {
+        "appId": "3201508004794",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201508004794/250x250.png",
+        "name": "Clovertise Digital Signage"
+      },
+      {
+        "appId": "111399001496",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/111399001496/250x250.png",
+        "name": "FPT Play"
+      },
+      {
+        "appId": "3201510005742",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201510005742/250x250.png",
+        "name": "Komfort Cloud SmartTV App"
+      },
+      {
+        "appId": "3201504002232",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201504002232/250x250.png",
+        "name": "Met Opera on Demand"
+      },
+      {
+        "appId": "141477000022",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/141477000022/250x250.png",
+        "name": "Monkey Madness"
+      },
+      {
+        "appId": "3201507004208",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201507004208/250x250.png",
+        "name": "Rockaxis TV"
+      },
+      {
+        "appId": "3201505002443",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201505002443/250x250.png",
+        "name": "Sleep Baby Owl - White Noise for Babys"
+      },
+      {
+        "appId": "3201512007025",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201512007025/250x250.png",
+        "name": "Настоящее время"
+      },
+      {
+        "appId": "3201601007492",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201601007492/250x250.png",
+        "name": "YuppTV"
+      },
+      {
+        "appId": "111399001366",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/111399001366/250x250.png",
+        "name": "AccuWeather - Weather for Life"
+      },
+      {
+        "appId": "3201612011314",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201612011314/250x250.png",
+        "name": "365 Days Fitness Yoga"
+      },
+      {
+        "appId": "3201610010763",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201610010763/250x250.png",
+        "name": "iflix"
+      },
+      {
+        "appId": "3201909019271",
+        "app_type": 2,
+        "icon": "/opt/down/webappservice/apps_icon/FirstScreen/3201909019271/250x250.png",
+        "name": "PrivacyChoices"
+      }
+    ]
+  },
+  "from": "host"
+}

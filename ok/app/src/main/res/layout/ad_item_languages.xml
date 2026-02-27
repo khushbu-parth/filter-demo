@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    android:background="@drawable/ad_gray_bg2"
+    android:paddingHorizontal="@dimen/_20sdp"
+    android:paddingVertical="@dimen/_15sdp">
+
+    <TextView
+        android:id="@+id/tvcircle"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ad_gray_circle"
+        android:fontFamily="@font/ad_medium"
+        android:gravity="center"
+        android:text="EN"
+        android:textColor="@color/AdColorDark"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/tvcircle"
+        android:fontFamily="@font/ad_light"
+        android:text="English"
+        android:textColor="@color/AdhowerColor"
+        android:textSize="@dimen/_12sdp" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ad_button_bg2"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ad_select" />
+
+</RelativeLayout>

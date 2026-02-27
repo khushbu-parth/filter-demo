@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_header"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/ad_semibold"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Select Language"
+            android:textColor="@color/AdTextDark"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="?actionBarSize"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_continue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ad_medium"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="@color/AdColorDark"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/ad_native" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLanguages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="12"
+            tools:listitem="@layout/ad_item_languages" />
+
+
+    </LinearLayout>
+</LinearLayout>

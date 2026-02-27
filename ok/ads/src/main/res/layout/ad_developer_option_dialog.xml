@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@drawable/ad_developer_bg">
+
+    <TextView
+        android:id="@+id/ivDeveloperOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_5sdp"
+        android:text="Turn Off"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/white"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ad_button_bg" />
+
+</RelativeLayout>

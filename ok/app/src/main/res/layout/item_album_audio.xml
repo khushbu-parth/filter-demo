@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/audio_card_bg"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageView_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/audio_card_bg"
+        android:backgroundTint="@color/color_main"
+        android:padding="8dp"
+        android:src="@drawable/record" />
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/tvNameAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_toEndOf="@+id/imageView_photo"
+        android:fontFamily="@font/extrabold"
+        android:gravity="center"
+        android:text="@string/album_name"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/tvSizeSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameAlbum"
+        android:layout_marginHorizontal="5dp"
+        android:layout_toEndOf="@+id/imageView_photo"
+        android:fontFamily="@font/extrabold"
+        android:gravity="center"
+        android:text="@string/album_name"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

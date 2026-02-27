@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:background="@drawable/bg_bottom_sheet"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/select_resolution"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/imv_dialogBsfYoutubeClose"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imv_dialogBsfYoutubeClose" />
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/route_mode"
+            android:textColor="#151515"
+            app:layout_constraintBottom_toBottomOf="@+id/imv_dialogBsfYoutubeHelp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imv_dialogBsfYoutubeHelp" />
+
+        <TextView
+            android:id="@+id/tv_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/different_videos_may"
+            android:textColor="#939393"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/imv_dialogBsfYoutubeHelp" />
+
+        <ImageView
+            android:id="@+id/imv_dialogBsfYoutubeClose"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_12sdp"
+            android:padding="@dimen/_7sdp"
+            android:src="@drawable/ic_close_gray"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imv_dialogBsfYoutubeHelp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_help_black"
+            app:layout_constraintLeft_toRightOf="@+id/tv_text1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="#d4d4d4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_help" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:padding="@dimen/_14sdp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

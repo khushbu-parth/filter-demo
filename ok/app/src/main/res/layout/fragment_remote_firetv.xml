@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ctFireTV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <com.pu.casttotv.tvcast.screenmirror.tvremote.customview.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/imv_fireTVSearch"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:background="@drawable/bg_button_remote_off"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_fire_tv_search"
+                app:layout_constraintStart_toStartOf="@+id/imv_fireTV"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imv_fireTVKeyBoard"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/bg_button_remote_off"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_fire_tv_keyboard"
+                app:layout_constraintEnd_toEndOf="@+id/imv_fireTV"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/imv_fireTV"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imv_fireTVSearch">
+
+                <com.pu.casttotv.tvcast.screenmirror.tvremote.customview.ViewRemoteTv
+                    android:id="@+id/view_remote_fire_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:type_tv="4"
+                    app:type_view="1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imv_fireTV"
+                app:layout_constraintLeft_toLeftOf="@+id/imv_fireTV"
+                app:layout_constraintRight_toRightOf="@+id/imv_fireTV"
+                app:layout_constraintTop_toTopOf="@+id/imv_fireTV" />
+
+            <ImageView
+                android:id="@+id/imv_fireTVHome"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_button_remote_off"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_home_roku"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint" />
+
+            <ImageView
+                android:id="@+id/imv_fireTVBack"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/bg_button_remote_off"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="@+id/imv_fireTVHome"
+                app:layout_constraintEnd_toStartOf="@+id/imv_fireTVHome"
+                app:layout_constraintStart_toStartOf="@+id/imv_fireTV"
+                app:layout_constraintTop_toTopOf="@+id/imv_fireTVHome" />
+
+            <ImageView
+                android:id="@+id/imv_fireTVMenu"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:background="@drawable/bg_button_remote_off"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_icon_menu"
+                app:layout_constraintBottom_toBottomOf="@+id/imv_fireTVHome"
+                app:layout_constraintEnd_toEndOf="@+id/imv_fireTV"
+                app:layout_constraintStart_toEndOf="@+id/imv_fireTVHome"
+                app:layout_constraintTop_toTopOf="@+id/imv_fireTVHome" />
+
+            <ImageView
+                android:id="@+id/imv_fireTVPlay"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_button_remote_off"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_skip_next"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imv_fireTVHome" />
+
+            <ImageView
+                android:id="@+id/imv_fireTVPre"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/bg_button_remote_off"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_fast_rewind"
+                app:layout_constraintBottom_toBottomOf="@+id/imv_fireTVPlay"
+                app:layout_constraintEnd_toStartOf="@+id/imv_fireTVPlay"
+                app:layout_constraintStart_toStartOf="@+id/imv_fireTVBack"
+                app:layout_constraintTop_toTopOf="@+id/imv_fireTVPlay" />
+
+            <ImageView
+                android:id="@+id/imv_fireTVNext"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:background="@drawable/bg_button_remote_off"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_fast_forward"
+                app:layout_constraintBottom_toBottomOf="@+id/imv_fireTVPlay"
+                app:layout_constraintEnd_toEndOf="@+id/imv_fireTVMenu"
+                app:layout_constraintStart_toEndOf="@+id/imv_fireTVPlay"
+                app:layout_constraintTop_toTopOf="@+id/imv_fireTVPlay" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.pu.casttotv.tvcast.screenmirror.tvremote.customview.CustomScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

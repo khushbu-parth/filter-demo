@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.magicapps.casttotv.tvcast.screenmirror.tvremote",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 1,
+      "versionName": "1.0",
+      "outputFile": "Screen Cast-VN-1.0-VC-1-28-02-2023.apk"
+    }
+  ],
+  "elementType": "File"
+}

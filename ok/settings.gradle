@@ -1,0 +1,5 @@
+rootProject.name = "Cast for Chromecast & TV Cast"
+include ':app'
+include ':Connect-SDK-Android', ':youtubeExtractor'
+include ':sdkGiftAds'
+include ':ads'

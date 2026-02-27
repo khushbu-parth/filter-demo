@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_6sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imvThumb"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_google_web" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_toLeftOf="@+id/imvRemove"
+            android:layout_toRightOf="@+id/imvThumb"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:lines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tvLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_medium"
+                android:lines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/_9ssp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imvRemove"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_exit"
+            android:backgroundTint="#a5a0a0" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

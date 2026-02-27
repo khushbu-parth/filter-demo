@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_header"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/ad_semibold"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Privacy Policy"
+            android:textColor="@color/AdTextDark"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/ad_native" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.adsdemo.vdapps.adsload.utils.MyWebView
+            android:id="@+id/privacy_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:buttonTint="@color/color_main" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/ad_light"
+            android:text="I have read and agree to the 'Terms of Use' and 'Privacy Policy'."
+            android:textColor="@color/AdTextDark"
+            android:textSize="@dimen/_8sdp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_notagree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ad_gray_bg"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/ad_light"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingTop="@dimen/_17sdp"
+            android:paddingBottom="@dimen/_17sdp"
+            android:text="Accept Terms to Continue"
+            android:textColor="#828282"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ad_button_bg"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/ad_light"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="Accept"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

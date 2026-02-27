@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "639712541697",
+    "project_id": "smart-tv-cast-623ab",
+    "storage_bucket": "smart-tv-cast-623ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639712541697:android:1a5fa3f688463844c9d400",
+        "android_client_info": {
+          "package_name": "com.magicapps.gallery.applock.ucvault.photovideovault"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639712541697-a5f6he5tm26rbqhcph2u1kf8uqr3m6hq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOEleNbCLW3qZCAK5whLmQEDsKVX92Qqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639712541697-a5f6he5tm26rbqhcph2u1kf8uqr3m6hq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639712541697:android:a6bbd628c7a26e50c9d400",
+        "android_client_info": {
+          "package_name": "com.magicapps.helth.myfitness.workout.steptracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639712541697-a5f6he5tm26rbqhcph2u1kf8uqr3m6hq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOEleNbCLW3qZCAK5whLmQEDsKVX92Qqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639712541697-a5f6he5tm26rbqhcph2u1kf8uqr3m6hq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639712541697:android:a618ee011330b69dc9d400",
+        "android_client_info": {
+          "package_name": "com.pu.casttotv.tvcast.screenmirror.tvremote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639712541697-evgussjel37im6onvnamc0pp4vv1iafl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pu.casttotv.tvcast.screenmirror.tvremote",
+            "certificate_hash": "26974ecd3607ce9147a834e5e659d43ff9287a98"
+          }
+        },
+        {
+          "client_id": "639712541697-a5f6he5tm26rbqhcph2u1kf8uqr3m6hq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOEleNbCLW3qZCAK5whLmQEDsKVX92Qqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639712541697-a5f6he5tm26rbqhcph2u1kf8uqr3m6hq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="150dp"
+    android:viewportWidth="150"
+    android:viewportHeight="150">
+    <path
+        android:fillColor="@color/bg_btn_home_ss_0"
+        android:fillType="evenOdd"
+        android:pathData="M0,75C0,33.6 33.6,0 75,0C116.4,0 150,33.6 150,75C150,116.4 116.4,150 75,150C33.6,150 0,116.4 0,75ZM35,75C35,97.1 52.9,115 75,115C97.1,115 115,97.1 115,75C115,52.9 97.1,35 75,35C52.9,35 35,52.9 35,75ZM110,75C110,94.33 94.33,110 75,110C55.67,110 40,94.33 40,75C40,55.67 55.67,40 75,40C94.33,40 110,55.67 110,75Z" />
+</vector>

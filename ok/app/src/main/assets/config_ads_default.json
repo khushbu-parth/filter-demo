@@ -1,0 +1,57 @@
+{
+  "open_ads": [
+    {
+      "id": "ca-app-pub-3940256099942544/3419835294",
+      "type": "admob",
+      "enable": true
+    }
+  ],
+  "splash_ads": [
+    {
+      "id": "YOUR_PLACEMENT_ID",
+      "type": "fan",
+      "enable": true
+    },
+    {
+      "id": "YOUR_PLACEMENT_ID",
+      "type": "fan_native",
+      "enable": true
+    }
+  ],
+  "full_ads": [
+    {
+      "id": "ca-app-pub-3940256099942544/1033173712",
+      "type": "admob",
+      "enable": true
+    },
+    {
+      "id": "YOUR_PLACEMENT_ID",
+      "type": "fan",
+      "enable": true
+    }
+  ],
+  "banner_ads": [
+    {
+      "id": "ca-app-pub-3940256099942544/6300978111",
+      "type": "admob",
+      "enable": true
+    },
+    {
+      "id": "YOUR_PLACEMENT_ID",
+      "type": "fan",
+      "enable": true
+    }
+  ],
+  "native_ads": [
+    {
+      "id": "ca-app-pub-3940256099942544/2247696110",
+      "type": "admob",
+      "enable": true
+    },
+    {
+      "id": "YOUR_PLACEMENT_ID",
+      "type": "fan",
+      "enable": true
+    }
+  ]
+}

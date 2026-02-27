@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/rl_youtubeBrowserHeader"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorCard"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imv_youtubeBrowserHelp"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="6dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_youtubeBack"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripple_effect_exit"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imv_youtubeBack"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+
+                    android:src="@drawable/back" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_youtubeBrowserTitle"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/ll_youtubeBack"
+                android:ellipsize="end"
+                android:fontFamily="@font/extrabold"
+                android:singleLine="true"
+                android:text="Cast Youtube"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ripple_effect_exit"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imv_youtubeBrowserConnect"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+
+                    android:layout_marginHorizontal="5dp"
+                    android:src="@drawable/screen" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/linearProgress"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:indicatorColor="@color/color_default"
+            app:layout_constraintBottom_toBottomOf="@+id/rl_youtubeBrowserHeader" />
+
+        <WebView
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/ctl_bottom"
+            app:layout_constraintTop_toBottomOf="@+id/linearProgress" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ctl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/colorCard"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintBottom_toTopOf="@+id/adsContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorCard"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView
+                    android:id="@+id/imv_youtubeBrowserList"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_yt_list_empty"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imv_youtubeBrowserBack"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_yt_back_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/imv_youtubeBrowserForward"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imv_youtubeBrowserForward"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_yt_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/imv_youtubeBrowserBack"
+                    app:layout_constraintRight_toLeftOf="@+id/imv_youtubeBrowserList"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imv_youtubeBrowserHome"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_yt_home"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/imv_youtubeBrowserList"
+                    app:layout_constraintRight_toLeftOf="@+id/imv_youtubeBrowserReload"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imv_youtubeBrowserReload"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_yt_reload"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/imv_youtubeBrowserHome"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/adsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/ad_native" />
+</LinearLayout>
+

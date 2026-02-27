@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_skip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ad_light"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="SKIP"
+                android:textColor="@color/AdTextDark"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/ad_native"
+        android:layout_marginTop="12dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/innerguidePager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBg" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:dotsColor="@color/AdColorLight"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="14dp"
+                app:dotsSpacing="3dp"
+                app:dotsWidthFactor="2.5"
+                app:progressMode="true"
+                app:selectedDotColor="@color/AdColorDark" />
+
+            <TextView
+                android:id="@+id/tv_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ad_button_bg"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/ad_light"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_50sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/tv_startapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ad_button_bg"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/ad_light"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="Get Start App"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/ad_banner" />
+
+</LinearLayout>

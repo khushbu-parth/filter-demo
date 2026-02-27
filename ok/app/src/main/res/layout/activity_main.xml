@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pu.casttotv.tvcast.screenmirror.tvremote.drawer.views.DuoDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end">
+
+    <com.pu.casttotv.tvcast.screenmirror.tvremote.drawer.views.DuoMenuView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="@string/tag_menu"
+        app:header="@layout/duo_view_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBg"
+        android:orientation="vertical"
+        android:tag="@string/tag_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlHeader"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/header"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llDrawer"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="?actionBarSize"
+                    android:background="@drawable/ripple_effect_exit"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/menu" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_toEndOf="@+id/llDrawer"
+                    android:fontFamily="@font/extrabold"
+                    android:gravity="center_vertical"
+                    android:text="@string/home"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="?actionBarSize"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="?actionBarSize"
+                        android:layout_height="?actionBarSize"
+                        android:background="@drawable/ripple_effect_exit"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/llSetting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:clickable="false"
+                            android:src="@drawable/ic_setting" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llConnect"
+                        android:layout_width="?actionBarSize"
+                        android:layout_height="?actionBarSize"
+                        android:background="@drawable/ripple_effect_exit"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imvConnect"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:src="@drawable/screen" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ivInAppPurchase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?actionBarSize"
+                        android:background="@drawable/ripple_effect_exit"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/ivPremium"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:clickable="false"
+                            android:src="@drawable/premium" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/iv_adtop"
+                        android:layout_width="?actionBarSize"
+                        android:layout_height="?actionBarSize"
+                        android:layout_gravity=""
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ad_drawer" />
+
+                        <TextView
+                            android:id="@+id/tv_counttop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/ad_call_to_action_small"
+                            android:text="6"
+                            android:textColor="@color/white"
+                            android:textSize="8dp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/main_desc"
+                    android:textColor="#cfdcff" />
+
+                <LinearLayout
+                    android:id="@+id/llScreenMirror"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/main_card_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|right">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/screen_cast" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/extrabold"
+                        android:text="@string/screen_mirror"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <!--            android:id="@+id/llIPTV"-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear
+                        android:id="@+id/llPhotoOff"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_card_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/image" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/all_photo"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/cast"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear>
+
+                    <com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear
+                        android:id="@+id/llVideo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_card_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/video" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/Videos"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/cast"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear>
+
+                    <com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear
+                        android:id="@+id/llMusic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_card_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/audio" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/Audios"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/cast"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear
+                        android:id="@+id/llYoutube"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_card_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/youtube" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/youtube"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/cast"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear>
+
+                    <com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear
+                        android:id="@+id/llPhotoOnline"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_card_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/google_photos" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/txt_photo_online"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/cast"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear>
+
+                    <com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear
+                        android:id="@+id/llVimeo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_card_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/vimeo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/txt_vimeo"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/cast"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </com.pu.casttotv.tvcast.screenmirror.tvremote.view.SquareLinear>
+                </LinearLayout>
+
+                <include layout="@layout/ad_native" />
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</com.pu.casttotv.tvcast.screenmirror.tvremote.drawer.views.DuoDrawerLayout>

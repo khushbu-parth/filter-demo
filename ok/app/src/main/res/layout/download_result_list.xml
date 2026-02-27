@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_transparent"
+    android:padding="@dimen/_8sdp">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="@dimen/_58sdp"
+        android:layout_height="@dimen/_58sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_video_default"
+        android:visibility="visible"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:siRadius="@dimen/_8sdp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical"
+        app2:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintStart_toEndOf="@+id/iv_poster"
+        app2:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_film_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:maxLines="2"
+            android:text="@string/title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/_10ssp"
+            app2:layout_constraintEnd_toEndOf="parent"
+            app2:layout_constraintLeft_toRightOf="@+id/cvImage"
+            app2:layout_constraintStart_toEndOf="@+id/cvImage"
+            app2:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtVidSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:text="@string/SizeUnknown"
+            android:textSize="@dimen/_8ssp"
+            app2:layout_constraintLeft_toRightOf="@+id/cvImage"
+            app2:layout_constraintTop_toBottomOf="@+id/tv_film_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.5"
+        app2:layout_constraintStart_toEndOf="@+id/iv_poster"
+        app2:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
+        <Button
+            android:id="@+id/btnPreview"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            android:drawablePadding="5sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/Preview"
+            android:textAllCaps="false"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/_10ssp" />
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_all"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/cast"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

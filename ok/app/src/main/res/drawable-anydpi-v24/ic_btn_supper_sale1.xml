@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="30dp"
+    android:viewportWidth="150"
+    android:viewportHeight="30">
+    <path
+        android:fillColor="@color/ic_btn_supper_sale1_0"
+        android:pathData="M135,0H15C6.716,0 0,6.716 0,15C0,23.284 6.716,30 15,30H135C143.284,30 150,23.284 150,15C150,6.716 143.284,0 135,0Z" />
+</vector>

@@ -1,0 +1,205 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.jakewharton.butterknife'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+//    id 'com.yanzhenjie.andserver'
+}
+
+android {
+
+    compileSdkVersion 33
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.pu.casttotv.tvcast.screenmirror.tvremote"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 3
+        versionName "1.2"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+    // Load keystore
+    def keystorePropertiesFile = rootProject.file("keystore.properties");
+    def keystoreProperties = new Properties()
+
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+    project.logger.lifecycle(keystoreProperties['RELEASE_STORE_FILE'])
+
+    signingConfigs {
+        release {
+            storeFile file(keystoreProperties['RELEASE_STORE_FILE'])
+            storePassword keystoreProperties['RELEASE_STORE_PASSWORD']
+            keyAlias keystoreProperties['RELEASE_KEY_ALIAS']
+            keyPassword keystoreProperties['RELEASE_KEY_PASSWORD']
+        }
+        debug {
+            storeFile file(keystoreProperties['DEBUG_STORE_FILE'])
+            storePassword keystoreProperties['DEBUG_STORE_PASSWORD']
+            keyAlias keystoreProperties['DEBUG_KEY_ALIAS']
+            keyPassword keystoreProperties['DEBUG_KEY_PASSWORD']
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        ignoreWarnings true
+        quiet true
+    }
+    defaultConfig {
+        resConfigs "en", "fi", "fr", "hi", "in", "ja", "kr", "no", "ru", "tr", "vi","es"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    def apk = null
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def name = "Screen Cast"
+            def SEP = "-"
+            def date = new Date()
+            def formattedDate = date.format('dd-MM-YYYY')
+            def versionName = defaultConfig.versionName
+            def versionCode = defaultConfig.versionCode
+            def newApkName = name + SEP + "VN-" + versionName + SEP + "VC-" + versionCode + SEP + formattedDate + ".apk"
+            apk = output.outputFileName = newApkName
+            println "Found output file: " + output.outputFile
+        }
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.+'
+    implementation project(':Connect-SDK-Android')
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+
+    def lifecycle_version = "2.4.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation project(':youtubeExtractor')
+    implementation 'com.github.florent37:expansionpanel:1.2.4'
+    implementation 'com.anthonycr.progress:animated-progress:1.0'
+    implementation 'cn.pedant.sweetalert:library:1.3'
+    implementation 'com.wonshinhyo:dragrecyclerview:1.0.5'
+    implementation 'com.google.android.gms:play-services-cast-framework:21.1.0'
+    implementation 'com.jsibbold:zoomage:1.3.1'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3'
+
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    kapt 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.1'
+
+    implementation 'com.ironsource.sdk:mediationsdk:7.1.3'
+    implementation 'org.java-websocket:Java-WebSocket:1.5.3'
+    implementation 'com.tananaev:adblib:1.3'
+
+    //google services api
+    implementation 'com.google.apis:google-api-services-drive:v3-rev110-1.23.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.1.2'
+    implementation 'com.google.guava:guava:27.0.1-android'
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+
+    implementation 'com.google.http-client:google-http-client-gson:1.26.0'
+    implementation('com.google.api-client:google-api-client-android:1.26.0') {
+        //noinspection DuplicatePlatformClasses
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    implementation 'org.mozilla.javascript:com.springsource.org.mozilla.javascript:1.7.0.R2'
+    implementation 'com.facebook.fresco:fresco:2.0.0'
+    implementation 'me.relex:photodraweeview:2.1.0'
+
+    implementation 'org.jsoup:jsoup:1.7.2'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'com.github.MonsterTechnoGits:WebViewAdblock:1.1'
+    implementation 'androidx.room:room-runtime:2.4.3'
+    implementation 'com.github.ed-george:AndroidVimeoExtractor:1.2.1'
+    implementation 'org.jdom:jdom2:2.0.6'
+    implementation 'com.google.dagger:dagger:2.38.1'
+    kapt "com.google.dagger:dagger-compiler:2.38.1"
+    implementation 'com.github.zhpanvip:bannerviewpager:3.5.7'
+    implementation 'com.zyao89:zloading:1.2.0'
+    implementation 'com.yanzhenjie.apache:httpcore:4.4.14.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.code.gson:gson:2.10'
+    //Ad Code
+    implementation project(':ads')
+    //
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    //Sdp for Display Wise Size Control
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    //razorpay
+    implementation 'com.razorpay:checkout:1.6.26'
+    //paytm
+    implementation 'com.paytm.appinvokesdk:appinvokesdk:1.6.13'
+    //Google Login
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    //JSON Animation
+    implementation 'com.airbnb.android:lottie:5.2.0'
+    //Swipe View Bottom Animation
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+    //RateUs starView
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
+    //In App Update
+    implementation 'com.google.android.play:core:1.8.3'
+    //Image Loading
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    //Firebase Crashlytics
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.5'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+
+}
