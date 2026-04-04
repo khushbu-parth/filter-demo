@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:gravity="center">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="@dimen/_180sdp"
+           android:src="@drawable/splash_icon"
+           android:layout_gravity="center"
+           android:layout_marginBottom="@dimen/_10sdp"/>
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="@dimen/_40sdp"
+           android:src="@drawable/splash_name"
+           android:layout_margin="@dimen/_10sdp"/>
+
+   </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:id="@+id/animation_view"
+        app:lottie_rawRes="@raw/s_lottie"
+        app:lottie_autoPlay="true"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tvADText"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/tvADText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app contains ads"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

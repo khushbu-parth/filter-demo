@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="keypad_btn_height">60dp</dimen>
+    <dimen name="dialarNumTextSize">27sp</dimen>
+    <dimen name="outgoing_call_btn_txt">12sp</dimen>
+    <dimen name="img_icon_outgoing_padding">12dp</dimen>
+</resources>

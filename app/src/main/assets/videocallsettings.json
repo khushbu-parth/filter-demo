@@ -1,0 +1,14 @@
+[
+  {
+    "id" : "WHATSAPP",
+    "name" : "whatsapp",
+    "icon" : "whatsapp_ic_new",
+    "aapPackage" : "com.whatsapp"
+  },
+  {
+    "id" : "DUO",
+    "name" : "duo",
+    "icon" : "ic_video_new",
+    "aapPackage" : "com.google.android.apps.tachyon"
+  }
+]

@@ -1,0 +1,21 @@
+
+{
+    "status": true,
+    "data":{
+    "themes": [
+        {
+            "thumbnail": "memories_thumb",
+            "themeImage": "memories",
+            "isFree": true,
+            "name": "Memories",
+            "source": "offline",
+            "contentType": "image",
+            "color": "000000",
+            "personName": "Steve",
+            "personPhoneNumber": "645 XX13 275",
+            "personImage": "p5",
+            "category": "theme"
+        }
+    ]
+    }
+}

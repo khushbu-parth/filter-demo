@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/speaker_opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/speaker_circle_opt"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/white_outline_circle"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="@dimen/img_icon_outgoing_padding"
+                    android:src="@drawable/speaker_ic_new"
+                    android:tint="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/speaker_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:alpha="0.9"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="@string/speaker"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/outgoing_call_btn_txt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bluetooth_opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bluetooth_circle_opt"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/white_outline_circle"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="@dimen/img_icon_outgoing_padding"
+                    android:src="@drawable/ic_bluetooth"
+                    android:tint="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:alpha="0.9"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="@string/bluetooth"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/outgoing_call_btn_txt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headset_opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/headset_circle_opt"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/white_outline_circle"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="@dimen/img_icon_outgoing_padding"
+                    android:src="@drawable/ic_call_new"
+                    android:tint="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:alpha="0.9"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="@string/headset"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/outgoing_call_btn_txt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/sofia_pro_regular"
+        android:text="@string/choose_mode"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

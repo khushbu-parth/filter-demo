@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.colorcallscreen.colorphone.callscreen.calltheme.Splash.BackActivity"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+            <LinearLayout
+                android:id="@+id/adsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgTitle"
+                android:layout_margin="@dimen/_5sdp">
+
+                <include
+                    layout="@layout/layout_native_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:background="@drawable/s_box"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginHorizontal="@dimen/_20sdp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/s_exittext"
+                    android:layout_marginBottom="@dimen/_20sdp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_35sdp"
+                        android:src="@drawable/s_yes"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:adjustViewBounds="true"/>
+                    <ImageView
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_35sdp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:src="@drawable/s_no"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

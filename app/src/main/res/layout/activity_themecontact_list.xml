@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_7sdp"
+            android:src="@drawable/ic_back" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/ivBack"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:gravity="start|center_vertical"
+            android:singleLine="true"
+            android:text="Select Contact"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:iconifiedByDefault="false"
+        app:queryHint="@string/search_contacts" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="@dimen/_5sdp" />
+
+    <Button
+        android:id="@+id/buttonSet"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/yellow_bg"
+        android:fontFamily="@font/sofia_pro_regular"
+        android:text="@string/set"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_adNative"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/sofia_pro_regular"
+        android:text="@string/apply_theme_to_selected_contact_s"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/layout_adNative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" />
+</RelativeLayout>

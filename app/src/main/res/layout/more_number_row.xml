@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:id="@+id/morenumlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/call"
+            android:layout_weight="1"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:text="+91 9897565485"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/msg"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_callno" />
+
+        <ImageView
+            android:id="@+id/msg"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/whatsapp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_msgno" />
+
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/whatsapp_ic_new" />
+
+        <ImageView
+            android:id="@+id/video_call"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_video_new"
+            android:tint="#cc353535"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

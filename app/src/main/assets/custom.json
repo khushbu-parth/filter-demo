@@ -1,0 +1,21 @@
+
+{
+    "status": true,
+    "data":{
+    "themes": [
+        {
+            "thumbnail": "add",
+            "themeImage": "add",
+            "isFree": true,
+            "name": "Custom",
+            "source": "custom",
+            "contentType": "image",
+            "personName": "You",
+            "personPhoneNumber": "645 XX13 275",
+            "personImage": "p5",
+            "category": "theme"
+        }
+
+    ]
+    }
+}

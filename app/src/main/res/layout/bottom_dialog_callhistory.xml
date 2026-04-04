@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_topcurve">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitleBottom"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:gravity="center"
+            android:text="Call History"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHistoryBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitleBottom"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </RelativeLayout>
+</RelativeLayout>

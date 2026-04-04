@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:tint="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:text="@string/we_need_your_app_permission"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:text="@string/please_go_to_your_device_settings_and_swtich_those_permission_on"
+            android:textAlignment="center"
+            android:textColor="@color/textColor2"
+            android:textSize="@dimen/_12ssp" />
+
+        <Button
+            android:id="@+id/btnApplied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/white"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:text="@string/device_settings"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

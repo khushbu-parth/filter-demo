@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_2sdp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_220sdp">
+
+                <ImageView
+                    android:id="@+id/add_icn"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/add"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/flash_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/gifImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/placeholder" />
+
+                    <LinearLayout
+                        android:id="@+id/topLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:elevation="4dp"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@color/dark_orange"
+                            app:civ_border_color="@color/gray"
+                            app:civ_border_overlay="true"
+                            app:civ_border_width="@dimen/_2sdp" />
+
+                        <TextView
+                            android:id="@+id/tvUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:ellipsize="marquee"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Unknown"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tcvUserNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:text="+91 1245 122 123"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/rounded_square"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:text="@string/incoming_call"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8ssp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iVCallDecline"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:src="@drawable/ic_call_decline"
+                                app:elevation="@dimen/_5sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:text="Decline"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iVCallAccept"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/ic_call_accept"
+                                app:elevation="@dimen/_5sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:text="Accept"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/theme_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:gravity="center"
+                android:text="Theme Name"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/action_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="2dp"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

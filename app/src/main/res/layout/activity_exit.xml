@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.colorcallscreen.colorphone.callscreen.calltheme.Splash.ExitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/s_tqvector"
+                android:adjustViewBounds="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/s_tq"/>
+
+            <ImageView
+                android:id="@+id/s_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:src="@drawable/s_exit"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

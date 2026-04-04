@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivCall"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="0.5"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/ic_callno"
+                    android:tint="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/ivMsg"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="0.5"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/ic_msgno"
+                    android:tint="@color/colorAccent" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/rel"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="#d9dbe9" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/iv_favouritestar"
+                android:layout_toEndOf="@+id/relaContactName">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAddContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:maxLines="1"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Add Contact"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCallDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtAddContact"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:maxLines="1"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Call Details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCallDetails"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:maxLines="1"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Copy Numbers"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCopy"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:maxLines="1"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Remove"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtBlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDelete"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofia_pro_regular"
+                    android:maxLines="1"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Block"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

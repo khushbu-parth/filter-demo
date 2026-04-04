@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_10_trans">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/pop_decline"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_call_decline" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Bolo App Number"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pop_sim_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/sofia_pro_regular"
+                android:text="Sim Name"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/mute_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/yellow_bg"
+                android:backgroundTint="#c9c9c9"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="0dp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:visibility="visible">
+
+                <Chronometer
+                    android:id="@+id/call_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/mute"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/mute_icn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:src="@drawable/speaker_off_new_24dp"
+                    android:tint="@color/white"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pop_accept"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_call_accept" />
+
+        <FrameLayout
+            android:id="@+id/swap_icn"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#f0f0f0"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/swap_icn"
+                android:tint="@color/black" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

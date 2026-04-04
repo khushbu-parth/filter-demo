@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CellImageView">
+        <attr name="meow_imageview_size" format="dimension">
+        </attr>
+        <attr name="meow_imageview_isBitmap" format="boolean">
+        </attr>
+        <attr name="meow_imageview_useColor" format="boolean">
+        </attr>
+        <attr name="meow_imageview_resource" format="reference">
+        </attr>
+        <attr name="meow_imageview_color" format="color">
+        </attr>
+        <attr name="meow_imageview_actionBackgroundAlpha" format="boolean">
+        </attr>
+        <attr name="meow_imageview_changeSize" format="boolean">
+        </attr>
+        <attr name="meow_imageview_fitImage" format="boolean">
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MeowBottomNavigation">
+        <attr name="mbn_backgroundBottomColor" format="color">
+        </attr>
+        <attr name="mbn_circleColor" format="color">
+        </attr>
+        <attr name="mbn_countBackgroundColor" format="color">
+        </attr>
+        <attr name="mbn_countTextColor" format="color">
+        </attr>
+        <attr name="mbn_countTypeface" format="string">
+        </attr>
+        <attr name="mbn_defaultIconColor" format="color">
+        </attr>
+        <attr name="mbn_rippleColor" format="color">
+        </attr>
+        <attr name="mbn_selectedIconColor" format="color">
+        </attr>
+        <attr name="mbn_shadowColor" format="color">
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color">
+        </attr>
+        <attr name="rb_duration" format="integer">
+        </attr>
+        <attr name="rb_radius" format="dimension">
+        </attr>
+        <attr name="rb_rippleAmount" format="integer">
+        </attr>
+        <attr name="rb_scale" format="float">
+        </attr>
+        <attr name="rb_strokeWidth" format="dimension">
+        </attr>
+        <attr name="rb_type">
+            <enum name="fillRipple" value="0" />
+            <enum name="strokeRipple" value="1" />
+        </attr>
+
+    </declare-styleable>
+</resources>

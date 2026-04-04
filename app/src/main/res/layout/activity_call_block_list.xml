@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_7sdp"
+            android:src="@drawable/ic_back" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/relEnd"
+            android:layout_toEndOf="@+id/ivBack"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:gravity="start|center_vertical"
+            android:singleLine="true"
+            android:text="Manage blocked numbers"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <RelativeLayout
+            android:id="@+id/relEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/add_call_ic_new"
+                android:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_delete"
+                android:tint="@color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bannerView"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <TextView
+            android:id="@+id/unblock_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sofia_pro_regular"
+            android:text="@string/block_list_empty"
+            android:textSize="@dimen/_16ssp"
+            android:visibility="gone" />
+
+        <com.ads.control.ads.bannerAds.AperoBannerAdView
+            android:id="@+id/bannerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </RelativeLayout>
+</LinearLayout>

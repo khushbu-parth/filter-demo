@@ -1,0 +1,37 @@
+
+{
+    "status": true,
+    "data":{
+    "themes": [
+
+        {
+            "thumbnail": "m_default_thumb",
+            "themeImage":"m_default",
+            "isFree":true,
+            "name":"Default",
+            "source": "offline",
+            "contentType": "image",
+            "personName" : "Jessica",
+            "personPhoneNumber" :  "000 XX00 000",
+            "personImage": "p3",
+            "category" : "theme"
+
+
+        },
+        {
+            "thumbnail": "beautiful_thumb",
+            "themeImage":"beautiful_min",
+            "isFree":true,
+            "name":"Beautiful",
+            "source": "offline",
+            "contentType": "image",
+            "personName" : "Jessica",
+            "personPhoneNumber" :  "626 202 XX88",
+            "personImage": "p1",
+            "category" : "theme"
+
+
+        }
+    ]
+    }
+}

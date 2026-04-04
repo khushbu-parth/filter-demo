@@ -1,3 +1,0 @@
-include ':AdsSdk'
-include ':app'
-rootProject.name = "Free Video Downloader"

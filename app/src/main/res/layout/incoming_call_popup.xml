@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme">
+
+    <FrameLayout
+        android:id="@+id/pop_rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingTop="30dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/pop_decline"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_call_decline" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pop_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="marquee"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="Bolo App Number"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/pop_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:text="+91 1234 456 456"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/pop_sim_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:text="Sim Name"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pop_silent_btn"
+                        android:layout_width="25dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/speaker_off_new"
+                        android:visibility="gone"
+                        app:tint="@color/pop_up_silent_color" />
+
+                    <ImageView
+                        android:id="@+id/pop_accept"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_call_accept" />
+
+                    <FrameLayout
+                        android:id="@+id/swap_icn"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#f0f0f0"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/close_btn"
+                            android:layout_width="25dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/swap_icn"
+                            app:tint="@color/black" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ballFrame_2"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        android:elevation="9dp"
+                        android:visibility="gone">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/pop_user_img_2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:elevation="8dp"
+                                android:padding="2dp"
+                                android:src="@color/black"
+                                app:civ_border_color="@color/gray"
+                                app:civ_border_overlay="true"
+                                app:civ_border_width="5dp" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/pop_textView_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sofia_pro_regular"
+                            android:text="S"
+                            android:textColor="@color/white"
+                            android:textSize="27sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pop_btn_pannel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#ccc"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/pop_smsBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/msg_ic_new"
+                                app:tint="@color/pop_up_btn_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:text="@string/message"
+                                android:textColor="@color/pop_up_btn_color"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pop_blockBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/block_ic_new"
+                                app:tint="@color/pop_up_btn_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:text="@string/block"
+                                android:textColor="@color/pop_up_btn_color"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pop_whatsappBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/whatsapp_ic_new"
+                                app:tint="@color/pop_up_btn_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:text="@string/whatsapp"
+                                android:textColor="@color/pop_up_btn_color"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pop_speakerBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/speaker_ic_new"
+                                app:tint="@color/pop_up_btn_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/sofia_pro_regular"
+                                android:text="@string/speaker"
+                                android:textAlignment="center"
+                                android:textColor="@color/pop_up_btn_color"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/mute_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/yellow_bg"
+                        android:backgroundTint="@color/pop_up_silent_color"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="2dp">
+
+                        <Chronometer
+                            android:id="@+id/call_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/mute"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/mute_icn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:src="@drawable/speaker_off_new_24dp"
+                            android:visibility="visible"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/remind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/sofia_pro_regular"
+                        android:paddingTop="2dp"
+                        android:text="Remind Later"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/new_ripple_square"
+                            android:backgroundTint="#d60808"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:rotation="135"
+                                android:src="@drawable/call_icn_red"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/new_ripple_square"
+                            android:backgroundTint="#29940e"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/call_icn_red"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/pop_tap"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@android:drawable/btn_dropdown"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shadow3"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:alpha="0.8"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="6dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shadow4"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="60dp"
+            android:alpha="0.6"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="6dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shadow1"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:alpha="0.8"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="6dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shadow2"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="60dp"
+            android:alpha="0.6"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="6dp" />
+
+        <com.colorcallscreen.colorphone.callscreen.calltheme.custom.CircleRippleView
+            android:id="@+id/content"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            app:rb_color="#ababab"
+            app:rb_duration="3000"
+            app:rb_radius="15dp"
+            app:rb_rippleAmount="4"
+            app:rb_scale="4" />
+
+        <FrameLayout
+            android:id="@+id/pop_ballFrame"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:elevation="9dp"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pop_user_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:elevation="8dp"
+                    android:padding="2dp"
+                    android:src="@color/dark_orange"
+                    app:civ_border_color="@color/gray"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="3dp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/pop_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="U"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" />
+</FrameLayout>
